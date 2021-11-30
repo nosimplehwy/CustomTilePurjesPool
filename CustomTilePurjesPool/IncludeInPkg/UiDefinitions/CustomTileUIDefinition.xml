@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<uidefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://prd-use-rad-assets.azurewebsites.net/ExtensionsSchemaDefinition_v1_0.xsd">
+  <version ver="1.0" />
+  <tile status="{TileStatus}" icon="{MainIcon}" navigation="show:MainPage" showinhomepage="#true" showinroompage="#true"/>
+  <layouts>
+    <layout id="MainPage" title="{MainPageTitle}" isdefaultlayout="#true">
+       <controls>
+        <subheader id="MainPageHeader" label="{TileStatus}" />
+          <buttongroup>
+            <button id="OnButton" label="{OnText}" action="command:OnCommand"/>
+            <button id="OffButton" label="{OffText}" action="command:OffCommand"/>
+          </buttongroup>          
+        </controls>
+    </layout>
+  </layouts>
+  <alerts>
+  </alerts>
+</uidefinition>
